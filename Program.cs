@@ -1,20 +1,15 @@
-﻿/*Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
-14212 -> нет
-12821 -> да
-23432 -> да*/
-
-string InNumber()
+﻿string InNumber()
 {
     while (true)
     {
-        string = = Console.ReadLine();
-        if (int.TryParse(text, out int ))
+        string text = Console.ReadLine();
+        if (int.TryParse(text, out int number))
         {
             if (text.Length == 5)
             {
                 Console.WriteLine($"Вы ввели число: {text}");
 
-                return ;
+                return text;
 
                 break;
             }
@@ -32,7 +27,7 @@ string InNumber()
 
 Console.Write("Введите пятизначное число: ");
 
-string = = InNumber();
+string stringNumber = InNumber();
 
 if (stringNumber[0] == stringNumber[4] || stringNumber[1] == stringNumber[3])
 {
